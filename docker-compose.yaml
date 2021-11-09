@@ -10,6 +10,8 @@ services:
   web:
     image: rodionbogoveev/yamdb_final:latest
     restart: always
+    ports:
+      - '80:80'
     volumes:
       - static_value:/code/static/
       - media_value:/code/media/
@@ -21,7 +23,7 @@ services:
   nginx:
     image: nginx:1.19.3
     ports:
-      - "80:80"
+      - '80:80'
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - static_value:/var/html/static/
