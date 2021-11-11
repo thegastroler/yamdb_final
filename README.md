@@ -72,7 +72,7 @@ docker-compose exec web python manage.py loaddata fixtures.json
 
 `docker-compose exec web python manage.py collectstatic --no-input`.
 
-Проект запущен и доступен по адресу [localhost](http://gastrolerontour.ru/api/v1/).
+Проект запущен и доступен по адресу http://gastrolerontour.ru/api/v1/.
 
 # CI/CD
 Для проекта YaMDB настроен _workflow_ со следующими инструкциями:
